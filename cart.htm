@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackCat Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/png" href="assets/img/Logo/Logo_1-removebg-preview.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="assets/img/Logo/Logo_1-removebg-preview.png" width="125px">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.htm">TRANG CHỦ</a></li>
+                <li><a href="product.htm">SẢN PHẨM</a></li>
+                <li><a href="sale.html">KHUYẾN MÃI</a></li>
+                <li><a href="cart.htm">GIỎ HÀNG</a></li>
+                <li><a href="intro.html">GIỚI THIỆU</a></li>
+                <li><a href="contact.htm">LIÊN HỆ</a></li>
+                <li><a href="login.htm">ĐĂNG NHẬP</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--sản phẩm chi tiết-->
+    <div class="small-container cart-page">
+
+        <table>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Thành Tiền</td>
+                    <td>0đ</td>
+                </tr>
+                <tr>
+                    <td>Thuế</td>
+                    <td>0đ</td>
+                </tr>
+                <tr>
+                    <td>Tổng tiền</td>
+                    <td>0đ</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Tải ứng dụng của chúng tôi</h3>
+                    <p>Ứng dụng có mặt trên Android và IOS</p>
+                    <div class="app-logo">
+                        <img src="assets/logo/play store.png">
+                        <img src="assets/logo/app store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="assets/img/Logo/Logo_1-removebg-preview.png">
+                </div>
+                <div class="footer-col-3">
+                    <h3>Sản phẩm</h3>
+                    <ul>
+                        <li><a href="product.htm">Vợt cầu lông</a></li>
+                        <li><a href="">Cầu lông</a></li>
+                        <li><a href="">Balo</a></li>
+                        <li><a href="">Phụ kiện</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://twitter.com/?lang=vi">Twitter</a></li>
+                        <li><a href="https://www.instagram.com">Instagram</a></li>
+                        <li><a href="https://www.youtube.com">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------js cho thư viện sản phẩm-------------->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[4].src;
+        }
+
+    </script>
+</body>
+
+</html>

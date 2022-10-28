@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackCat Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/png" href="assets/img/Logo/Logo_1-removebg-preview.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.htm"><img src="assets/img/Logo/Logo_1-removebg-preview.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.htm">TRANG CHỦ</a></li>
+                    <li><a href="product.htm">SẢN PHẨM</a></li>
+                    <li><a href="sale.html">KHUYẾN MÃI</a></li>
+                    <li><a href="cart.htm">GIỎ HÀNG</a></li>
+                    <li><a href="intro.html">GIỚI THIỆU</a></li>
+                    <li><a href="contact.htm">LIÊN HỆ</a></li>
+                    <li><a href="login.htm">ĐĂNG NHẬP</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--login-->
+        <div class="content">
+            <h1>BlackCat Shop</h1>
+            <p class="par">Shop bán vợt cầu lông uy tín nhất </p>
+            <button class="cn"><a href="index.htm">Truy cập</a></button>
+            <div class="form">
+                <h2>Đăng ký tài khoản</h2>
+                <form id="LoginForm" action="sign_up.htm" onsubmit="matchpass()" method="post">
+                    <input type="email" name="email" placeholder="Nhập email">
+                    <input type="password" name="password1" placeholder="Nhập mật khẩu">
+                    <input type="password" name="password2" placeholder="Nhập lại mật khẩu">
+                    <button class="btn2"><a href="#">Đăng ký</a></button>
+                    <p class="link">Đã có tài khoản<br>
+                        <a href="login.htm">Đăng nhập</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function matchpass() {
+            var firstpassword = document.getElementsByName("password1");
+            var secondpassword = document.getElementsByName("password2");
+
+
+            let x = document.forms["LoginForm"]["email"].value;
+            if (x == "") {
+                alert("Bạn phải điền email");
+                return false;
+            }
+
+            if (firstpassword.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+
+            if (secondpassword.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+
+            if (firstpassword == secondpassword) {
+                return true;
+            } else {
+                alert("password must be same!");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
